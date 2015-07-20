@@ -1,4 +1,8 @@
+def json
+'[ {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"}, {"foo": "bar"} ]'
+end
+
 request = Nginx::Request.new
 request.content_type = 'text/plain'
-json = JSON.parse('{"foo": "bar"}')
+data = JSON.parse(json)
 Nginx.echo "bug?"
